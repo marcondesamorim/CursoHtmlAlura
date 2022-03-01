@@ -23,7 +23,7 @@ function addHeader() {
 
     let img = document.createElement('img');
     img.src = path + "/img/logo.png";
-    console.log(img.src);
+    img.alt = "Logo da Barbearia Alura";
     h1.appendChild(img);
 
     let nav = document.createElement('nav');
@@ -34,7 +34,6 @@ function addHeader() {
 
     let liHome = document.createElement('li');
     liHome.innerHTML = `<a href="${path}/index.html">Home</a>`;
-    console.log(liHome.innerHTML);
     ul.appendChild(liHome);
 
     let liProduto = document.createElement('li');
@@ -45,8 +44,6 @@ function addHeader() {
     let liContato = document.createElement('li');
     liContato.innerHTML = `<a href="${path}/page/contatos.html">Contatos</a>`;
     ul.appendChild(liContato);
-
-    console.log(header[0]);
 }
 
 function addFooter() {
@@ -65,8 +62,7 @@ function addFooter() {
 
     let img = document.createElement('img');
     img.src = path + "/img/logo-branco.png";
-
-    console.log(img.src);
+    img.alt = "Logo da Barbearia Alura";
     footer[0].appendChild(img);
 
     let p = document.createElement('p');
